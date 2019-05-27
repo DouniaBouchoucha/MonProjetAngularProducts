@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-header text-info">
+   Products catalogue
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead>
+         <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Unit Price</th>
+        </tr>
+
+      </thead>
+      <tbody>
+          <tr *ngFor="let item of products">
+          <td scope="row">{{item.id}}</td>
+          <td scope="row">{{item.name}}</td>
+          <td scope="row">{{item.unitPrice}}</td>
+        </tr>
+        <tr>
+          <td scope="row"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer text-muted">
+    Footer
+  </div>
+</div>
